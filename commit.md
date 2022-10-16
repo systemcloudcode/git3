@@ -4,7 +4,7 @@ For documentation purposes, shows commit message, changed elements, provides det
 
 ## commit message:
 
-- initial commit
+- update css primary colour, page titling, action layout and elements
 
 ## elements:  
 
@@ -18,4 +18,4 @@ For documentation purposes, shows commit message, changed elements, provides det
 
 ## details:
 
-- 
+- css changes, primary colour, page titling for single page app, listing of actions, button and element placement
