@@ -4,18 +4,22 @@ For documentation purposes, shows commit message, changed elements, provides det
 
 ## commit message:
 
-- update css primary colour, page titling, action layout and elements
+- dev tool flow and top nav elements
+post child navation and category title
 
 ## elements:  
 
 - [x] /themes/understrap-child
 - [ ] page
 - [ ] post
-- [ ] /plugins
+- [x] /plugins
 - [ ] formidable
 - [ ] /uploads
-- [ ] other
+- [x] other
 
 ## details:
 
-- css changes, primary colour, page titling for single page app, listing of actions, button and element placement
+- general dev tool steps using staging and live data from production
+- add "Disable Real Mime Check" to allow for FRM entry imports without errors
+- add New and Login top nav elements
+- clean up complete child form
