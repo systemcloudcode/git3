@@ -4,22 +4,25 @@ For documentation purposes, shows commit message, changed elements, provides det
 
 ## commit message:
 
-- dev tool flow and top nav elements
-post child navation and category title
+- child post layout, category title update, and basic post / action navigation
 
 ## elements:  
 
 - [x] /themes/understrap-child
 - [ ] page
 - [ ] post
-- [x] /plugins
+- [ ] /plugins
 - [ ] formidable
+- [x] snippets
 - [ ] /uploads
 - [x] other
 
 ## details:
 
-- general dev tool steps using staging and live data from production
-- add "Disable Real Mime Check" to allow for FRM entry imports without errors
-- add New and Login top nav elements
-- clean up complete child form
+- snippet: test wp_update_category() function for post child navation and update category title
+- functions.php: require once taxonomy.php
+- single.php: post to action navigation
+- page block ([cat_slug]): action to posts navigation
+- snippet [header-h1]: hide header when single action
+- add space betweeen "": [formidable id="13" entry=[id] fields=" "]
+- experiment with .type-post .entry-content layout changes

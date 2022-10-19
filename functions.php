@@ -8,6 +8,7 @@
 // Exit if accessed directly.
 defined( 'ABSPATH' ) || exit;
 
+require_once( ABSPATH . '/wp-admin/includes/taxonomy.php');
 
 
 /**
@@ -87,3 +88,5 @@ function understrap_child_customize_controls_js() {
 	);
 }
 add_action( 'customize_controls_enqueue_scripts', 'understrap_child_customize_controls_js' );
+
+
