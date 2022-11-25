@@ -11,18 +11,16 @@ For documentation purposes, shows commit message, changed elements, provides det
 - [x] /themes/understrap-child
 - [ ] page
 - [ ] post
-- [ ] /plugins
+- [x] /plugins
 - [ ] formidable
 - [x] snippets
 - [ ] /uploads
-- [x] other
+- [ ] other
 
 ## details:
 
-- snippet: test wp_update_category() function for post child navation and update category title
-- functions.php: require once taxonomy.php
+- snippet: tag_cloud_by_category
+- achives.php: related code that calls tag_cloud_by_category
 - single.php: post to action navigation
-- page block ([cat_slug]): action to posts navigation
-- snippet [header-h1]: hide header when single action
-- add space betweeen "": [formidable id="13" entry=[id] fields=" "]
-- experiment with .type-post .entry-content layout changes
+- _child_theme.scss styling related to _child_theme.scss
+- plugins upgrades outside theme / source control
