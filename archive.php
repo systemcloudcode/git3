@@ -38,6 +38,28 @@ $container = get_theme_mod( 'understrap_container_type' );
 						?>
 					</header><!-- .page-header -->
 
+	
+
+					<?php
+					    if(isset($_SERVER['HTTPS']) && $_SERVER['HTTPS'] === 'on')   
+						$url = "https://";   
+				   else  
+						$url = "http://";   
+				   // Append the host(domain name, ip) to the URL.   
+				   $url.= $_SERVER['HTTP_HOST'];   
+				   
+				   // Append the requested resource location to the URL   
+				   $url.= $_SERVER['REQUEST_URI'];    
+					 
+				  // echo $url;
+				   
+				   $uriSegments = explode("/", parse_url($_SERVER['REQUEST_URI'], PHP_URL_PATH));
+				   $uriSegments = substr($uriSegments[2], 0, 5);
+				   //echo $uriSegments;
+
+
+					echo FrmViewsDisplaysController::get_shortcode( array( 'id' => 4274, 'filter' => 'limited', 'entry' => $uriSegments) );
+					?>
 					<div class="tag-cloud-by-category">
 						<?php 
 						$category = get_category( get_query_var( 'cat' ) );
@@ -47,7 +69,12 @@ $container = get_theme_mod( 'understrap_container_type' );
             //echo $cat_id;   
 						}
 						?>
-					</div>	
+					</div>
+
+					<div class="posts-by-category" style="
+    width: 75%;
+    float: right;
+">
 					<?php
 					// Start the loop.
 					while ( have_posts() ) {
@@ -64,6 +91,7 @@ $container = get_theme_mod( 'understrap_container_type' );
 					get_template_part( 'loop-templates/content', 'none' );
 				}
 				?>
+				</div>
 
 			</main><!-- #main -->
 

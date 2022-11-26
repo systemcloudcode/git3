@@ -15,6 +15,10 @@
     padding-bottom: 5px !important;
 }
 
+.list-group {
+    display: block !important;
+}
+
 .list-group-item {
     display: flex !important;
     flex-direction: row !important;
@@ -74,3 +78,13 @@
     margin-bottom: 20px !important;
 }
     
+
+.posts-by-category .entry-title {
+    font-size: 22px !important;
+
+}
+
+.posts-by-category {
+    width: 75% !important;
+    float: right !important; 
+}

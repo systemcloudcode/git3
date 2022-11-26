@@ -4,23 +4,21 @@ For documentation purposes, shows commit message, changed elements, provides det
 
 ## commit message:
 
-- child post layout, category title update, and basic post / action navigation
+- archive.php related tweaks (add single parent, display tweaks), mobile list temp display fix
 
 ## elements:  
 
 - [x] /themes/understrap-child
 - [ ] page
 - [ ] post
-- [x] /plugins
+- [ ] /plugins
 - [ ] formidable
-- [x] snippets
+- [ ] snippets
 - [ ] /uploads
 - [ ] other
 
 ## details:
 
-- snippet: tag_cloud_by_category
-- achives.php: related code that calls tag_cloud_by_category
-- single.php: post to action navigation
-- _child_theme.scss styling related to _child_theme.scss
-- plugins upgrades outside theme / source control
+- .list-group display as block for mobile temp fix, so far so good for desktop
+- achives.php: use php to view parent view (FrmViewsDisplaysController::get_shortcode)
+- achives.php: some quick styling use new class .posts-by-category
