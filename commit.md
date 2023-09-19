@@ -4,7 +4,7 @@ For documentation purposes, shows commit message, changed elements, provides det
 
 ## commit message:
 
-- set up functions-include.php
+- add application login/logout and tool flow
 
 ## elements:  
 
@@ -15,8 +15,11 @@ For documentation purposes, shows commit message, changed elements, provides det
 - [ ] formidable
 - [ ] snippets
 - [ ] /uploads
-- [ ] other
+- [x] other
 
 ## details:
 
-- edit functions.php and /inc folder
+- add login.php and secured-page.php
+- add _login.scss and help icon
+- apprearance: logout redirect menu link
+- custom redirect and skip confirmation functions in /inc
