@@ -4,7 +4,7 @@ For documentation purposes, shows commit message, changed elements, provides det
 
 ## commit message:
 
-- archive.php related tweaks (add single parent, display tweaks), mobile list temp display fix
+- set up functions-include.php
 
 ## elements:  
 
@@ -19,6 +19,4 @@ For documentation purposes, shows commit message, changed elements, provides det
 
 ## details:
 
-- .list-group display as block for mobile temp fix, so far so good for desktop
-- achives.php: use php to view parent view (FrmViewsDisplaysController::get_shortcode)
-- achives.php: some quick styling use new class .posts-by-category
+- edit functions.php and /inc folder
